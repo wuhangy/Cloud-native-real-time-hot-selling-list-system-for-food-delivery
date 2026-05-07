@@ -1,5 +1,4 @@
-                                                                                                  云原生外卖实时热销榜系统 
-
+云原生外卖实时热销榜系统 
 项目背景与核心价值
 设计并实现了一个支撑千万级 DAU 外卖平台的实时热销榜系统，解决传统排行榜计算延迟高（分钟级）、缓存穿透、扩展性差等痛点。系统采用读写分离 + 最终一致性架构，通过 Redis Sorted Set 实现毫秒级排名计算，支持多时间维度（实时/日/周/月/全部）热销排行，并提供高可用（99.95%）、可观测、弹性伸缩的云原生部署方案。单机 QPS 突破 15,000+，P99 延迟 < 50ms。
 
@@ -14,7 +13,7 @@
 前端：React 18 + Ant Design + Zustand + Axios + Recharts
 容器化：Docker + Kubernetes (K8s) + Docker Compose
 编排与部署：K8s (Deployment/Service/Ingress/HPA) + Minikube
-CI/CD：Jenkins Pipeline + GitLab CI + SonarQube + Trivy
+CI/CD：Jenkins Pipeline
 监控：Prometheus + Grafana + AlertManager + 钉钉告警
 数据库：MySQL 8.0 + Redis 7.0 (主从 + 哨兵)
 Web服务器：Nginx + Gunicorn
